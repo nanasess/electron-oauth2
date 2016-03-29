@@ -32,7 +32,8 @@ app.on('ready', () => {
 
   const options = {
     scope: 'SCOPE',
-    accessType: 'ACCESS_TYPE'
+    accessType: 'ACCESS_TYPE',
+    state: 'RANDOM_STATE'
   };
 
   const myApiOauth = electronOauth2(config, windowParams);

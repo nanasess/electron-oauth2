@@ -22,6 +22,10 @@ module.exports = function (config, windowParams) {
       urlParams.access_type = opts.accessType;
     }
 
+    if (opts.state) {
+      urlParams.state = opts.state;
+    }
+
     var url = config.authorizationUrl + '?' + queryString.stringify(urlParams);
 
     return new Promise(function (resolve, reject) {
